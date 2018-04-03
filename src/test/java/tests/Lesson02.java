@@ -20,9 +20,9 @@ public class Lesson02 {
         WebElement buttonSubmit = driver.findElement(By.cssSelector("[type='submit']"));
         buttonSubmit.click();
 
-        WebElement tableOfFlights = driver.findElement(By.className("table"));
+        WebElement title = driver.findElement(By.tagName("h3"));
 
-        assertTrue(tableOfFlights.isDisplayed());
+        assertTrue(title.isDisplayed());
     }
 
     @AfterAll
